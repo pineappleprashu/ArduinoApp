@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.prashant.arduinoapp.MainActivity"
+    android:layout_gravity="center"
+    android:background="@color/background">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON"
+        android:id="@+id/onButton"
+        android:layout_marginTop="85dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFF"
+        android:id="@+id/offButton"
+        android:layout_below="@+id/onButton"
+        android:layout_alignStart="@+id/onButton"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reverse"
+        android:id="@+id/reverse"
+        android:layout_below="@+id/offButton"
+        android:layout_alignStart="@+id/offButton"
+        android:layout_marginTop="19dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forward"
+        android:id="@+id/forward"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/reverse"
+        android:layout_alignStart="@+id/reverse"/>
+
+</RelativeLayout>
